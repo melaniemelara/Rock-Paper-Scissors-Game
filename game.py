@@ -9,6 +9,10 @@ from random import randint
 # choices = [0 = "rock", 1 = "paper", 2 = "scissors"]
 choices = ["rock", "paper", "scissors"]
 
+player_lives = 3
+computer_lives = 3
+total_lives = 3
+
 # version 1, to explain array indexing
 # player_choice = choices[1]
 # player_choice = "paper"
@@ -21,7 +25,7 @@ print("user chose: " + player_choice)
 #this wll be the AI choice -> a random pick from the choices array
 computer_choice = choices[randint(0, 2)]
 
-print("computer chose:" + computer_choice)
+print("computer chose: " + computer_choice)
 
 if computer_choice == player_choice:
     print("tie")
@@ -29,17 +33,29 @@ if computer_choice == player_choice:
 elif computer_choice == "rock":
     if player_choice == "scissors":
         print("you lose!")
+        # verbose way looks like this: player_lives = player_lives - 1
+        # simplified way looks like this:
+        player_lives -= 1
     else:
         print("you win!")
+        computer_lives -= 1
 
 elif computer_choice == "paper":
     if player_choice == "scissors":
         print("you win!")
+        computer_lives -= 1
     else:
         print("you lose!")
+        player_lives -= 1
 
 elif computer_choice == "scissors":
     if player_choice == "paper":
         print("you lose!")
+        player_lives -= 1
     else:
         print("you win!")
+        computer_lives -= 1
+
+print("Player Lives:", player_lives)
+print("Computer Lives:", computer_lives)
+
