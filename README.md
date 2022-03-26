@@ -5,6 +5,20 @@ A virtual version or rock paper scissors! Two players compete by choosing an opt
 ## Porject Roadmap File 
 [Project Roadmap Google Doc Link](https://docs.google.com/document/d/1kzeaTaDmXDNTThU0h6-RnU54l37CDJYm1vLTRDdUgM8/edit?usp=sharing)
 
+## Steps
+1. Player 1 chooses rock, paper, or scissors (1 of 3 options)
+2. Player 2 (AI) chooses rock, paper, or scissors (1of 3 options)
+3. Compare the two choices - iterate through until ou find a win, lose, or tie
+4. Remove a life grom the loser
+5. Display a message/life count per cycle
+6. End the game when a player loses all their lives
+7. Give an option to quit
+8. Repeat the entire sequence until somebody wins
+
+## Helpful Links
+[PythonTutorial](https://www.youtube.com/watch?v=DZwmZ8Usvnk)
+[LogicPuzzles] (https://blog.finxter.com/five-beginner-level-python-logic-puzzles/)
+
 ## MIT License
 Copyright 2021 Melanie Melara
 
