@@ -53,8 +53,14 @@ while player_choice == False:
     # player_choice = "paper"
     # print("index 1 in the choice array is " + player_choice + ", which is paper")
 
+    print("Choose your weapon! Or type quit to exit \n")
+
     player_choice = input("choose rock, paper, or scissors: \n")
     # player choice now equals TRUE because it has a value
+
+    if player_choice == "quit":
+        print("You chose to quit")
+        exit()
 
     print("user chose: " + player_choice)
 
